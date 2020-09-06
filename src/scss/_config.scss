@@ -1,0 +1,27 @@
+$darkest : #A03401;
+$dark: #854E19;
+$medium:#B9690B;
+$light:#DC8A14;
+$lightest:#F9BD4E;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@mixin media-md {
+    @media screen and (max-width:500px){
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (max-width:1600px){
+        @content;
+    }
+}

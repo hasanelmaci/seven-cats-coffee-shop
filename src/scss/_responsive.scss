@@ -1,0 +1,55 @@
+@include media-md {
+    .opening{
+        background-image: url("../img/cof3-responsive3.jpg");
+        height: 690px;
+
+        .slogan{
+
+            h1{
+                font-size:20vw;
+                margin-top:10px;
+            }
+
+            h2{
+                font-size:10vw;
+
+            }
+
+        }
+
+    }
+
+    .navbar{
+        width: 100%;
+        margin-left:0;
+
+        ul{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            font-size:1.5rem;
+
+            li{
+                
+                border-radius: 5px;
+                text-align: center;
+
+                a{
+                    display:block;
+                    margin-bottom:6px;
+                    padding:10px;;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+@include media-lg {
+   
+}
+
+@include media-xl{
+   
+}

@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.opening {
+  background-image: url("../img/cof3.jpg");
+  max-width: 100%;
+  height: 940px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opening .slogan {
+  position: absolute;
+  top: 27%;
+  width: 100%;
+  text-align: center;
+}
+
+.opening .slogan h1 {
+  color: #BFA586;
+  font-size: 8vw;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.opening .slogan h2 {
+  color: #BFA586;
+  font-size: 2.5vw;
+  font-weight: 400;
+  font-family: 'Kumbh Sans', sans-serif;
+  letter-spacing: 5px;
+}
+
+.navbar {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  margin-top: 40px;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  padding: 30px;
+  color: #bfa586;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+  font-size: 1.6rem;
+  color: #c4bdb5;
+}
+
+@media screen and (max-width: 500px) {
+  .opening {
+    background-image: url("../img/cof3-responsive3.jpg");
+    height: 690px;
+  }
+  .opening .slogan h1 {
+    font-size: 20vw;
+    margin-top: 10px;
+  }
+  .opening .slogan h2 {
+    font-size: 10vw;
+  }
+  .navbar {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+  }
+  .navbar ul li {
+    border-radius: 5px;
+    text-align: center;
+  }
+  .navbar ul li a {
+    display: block;
+    margin-bottom: 6px;
+    padding: 10px;
+  }
+}
+
+body {
+  background-color: #F8F7F5;
+}
+/*# sourceMappingURL=main.css.map */
