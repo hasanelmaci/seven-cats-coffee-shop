@@ -4,9 +4,9 @@ function Navbar() {
     return (
         <div className="navbar">
             <ul>
-                <li><a href="#a">About Us</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#a">Contact</a></li>
-                <li><a href="#a">Our Products</a></li>
+                <li><a href="#a">Menu</a></li>
                 <li><a href="#a">Online Shop</a></li>
                
             </ul>

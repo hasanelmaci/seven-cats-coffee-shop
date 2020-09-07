@@ -1,8 +1,15 @@
-@import 'config';
 @import 'opening';
 @import 'navbar';
+@import 'about';
+@import 'gallery';
+@import 'config';
 @import 'responsive';
 
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color:#F8F7F5;
+    background-color:#EBE4D6;
 }

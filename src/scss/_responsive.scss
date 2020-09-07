@@ -1,55 +1,152 @@
 @include media-md {
-    .opening{
-        background-image: url("../img/cof3-responsive3.jpg");
-        height: 690px;
+  .opening {
+    background-image: url("../img/opening-responsive.jpg");
+    height: 630px;
 
-        .slogan{
+    .slogan {
+      h1 {
+        font-size: 20vw;
+        margin-top: 40px;
+      }
 
-            h1{
-                font-size:20vw;
-                margin-top:10px;
-            }
+      h2 {
+        font-size: 10vw;
+      }
+    }
+  }
 
-            h2{
-                font-size:10vw;
+  .navbar {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
 
-            }
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-size: 1.3rem;
 
+      li {
+        border-radius: 5px;
+        text-align: center;
+
+        a {
+          display: block;
+          margin-bottom: 6px;
+          padding: 10px;
         }
+      }
+    }
+  }
 
+  #about {
+    max-width: 88%;
+    margin-top: 25px;
+    p {
+      font-size: 1.1rem;
+      text-indent: 20px;
+    }
+  }
+  
+  .gallery{
+    display:flex;
+    flex-direction: column;
+  
+    .maintext1{
+      position: relative;
+      width: 100%;
+      margin-top:20px !important;
+
+      &__paragraph{
+        font-size:1.2rem !important;
+
+      }
+      
     }
 
-    .navbar{
-        width: 100%;
-        margin-left:0;
 
-        ul{
-            display:grid;
-            grid-template-columns: 1fr 1fr;
-            font-size:1.5rem;
+    .maintext2{
+      position: relative;
+      width: 100%;
+      margin-top:20px;
+  
+      &__paragraph{
+        font-size:1.2rem !important;
 
-            li{
-                
-                border-radius: 5px;
-                text-align: center;
-
-                a{
-                    display:block;
-                    margin-bottom:6px;
-                    padding:10px;;
-                }
-            }
-
-        }
+      }
+      
     }
+  
+   .shop1{
+     position:relative;
+     width: 100%;
+     display:block;
+   }
+   .shop2{
+     position:relative;
+     width: 100%;
+     display: block;
+     margin-top:20px;
+   }
+  }
 
 
 }
+
+
+
+/*-----------------------------------------------------------------*/
+
 
 @include media-lg {
-   
-}
+  .opening {
+    background-image: url("../img/coffee-opening-tablet.jpg");
 
-@include media-xl{
-   
+    .slogan {
+      h1 {
+        font-size: 14vw;
+        margin-top: 5px;
+      }
+
+      h2 {
+        font-size: 8vw;
+      }
+    }
+  }
+
+  .navbar {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 70px;
+  }
+
+  #about {
+    max-width: 85%;
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .gallery {
+    .maintext1 {
+      margin-top:0;
+
+      &__paragraph{
+        font-size:2.4vw;
+        
+      }
+    }
+  
+  .maintext2 {
+
+    &__paragraph{
+      font-size:2.4vw;
+      
+    }
+  }
+
+  .shop2{
+    margin-top:25%;
+  }
+
+}
 }
