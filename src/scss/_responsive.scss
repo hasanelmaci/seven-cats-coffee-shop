@@ -1,4 +1,6 @@
 @include media-md {
+  /*mobile*/
+
   .opening {
     background-image: url("../img/opening-responsive.jpg");
     height: 630px;
@@ -46,56 +48,68 @@
       text-indent: 20px;
     }
   }
-  
-  .gallery{
-    display:flex;
+
+  .gallery {
+    display: flex;
     flex-direction: column;
-  
-    .maintext1{
+
+    .maintext1 {
       position: relative;
       width: 100%;
-      margin-top:20px !important;
+      margin-top: 20px !important;
 
-      &__paragraph{
-        font-size:1.2rem !important;
-
+      &__paragraph {
+        font-size: 1.2rem !important;
       }
-      
     }
 
-
-    .maintext2{
+    .maintext2 {
       position: relative;
       width: 100%;
-      margin-top:20px;
-  
-      &__paragraph{
-        font-size:1.2rem !important;
+      margin-top: 20px;
 
+      &__paragraph {
+        font-size: 1.2rem !important;
       }
-      
     }
-  
-   .shop1{
-     position:relative;
-     width: 100%;
-     display:block;
-   }
-   .shop2{
-     position:relative;
-     width: 100%;
-     display: block;
-     margin-top:20px;
-   }
+
+    .shop1 {
+      position: relative;
+      width: 100%;
+      display: block;
+    }
+    .shop2 {
+      position: relative;
+      width: 100%;
+      display: block;
+      margin-top: 20px;
+    }
   }
 
+  .gallery {
+    .enter_animation {
+      -webkit-animation: none !important;
+      -webkit-transform: none !important;
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -o-transition: none !important;
+      -ms-transition: none !important;
+      transition: none !important;
+    }
 
+    .exit_animation {
+      -webkit-animation: none !important;
+      -webkit-transform: none !important;
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -o-transition: none !important;
+      -ms-transition: none !important;
+      transition: none !important;
+    }
+  }
 }
 
-
-
 /*-----------------------------------------------------------------*/
-
 
 @include media-lg {
   .opening {
@@ -128,25 +142,21 @@
 
   .gallery {
     .maintext1 {
-      margin-top:0;
+      margin-top: 0;
 
-      &__paragraph{
-        font-size:2.4vw;
-        
+      &__paragraph {
+        font-size: 2.4vw;
       }
     }
-  
-  .maintext2 {
 
-    &__paragraph{
-      font-size:2.4vw;
-      
+    .maintext2 {
+      &__paragraph {
+        font-size: 2.4vw;
+      }
+    }
+
+    .shop2 {
+      margin-top: 25%;
     }
   }
-
-  .shop2{
-    margin-top:25%;
-  }
-
-}
 }

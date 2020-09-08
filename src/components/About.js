@@ -3,8 +3,7 @@ import React from "react";
 
 document.addEventListener('scroll', function (e) {
     var top  = window.pageYOffset + window.innerHeight,
-        isVisible = top > document.querySelector('#about > h3').offsetTop;
-  
+        isVisible = top > document.querySelector('#about > p').offsetTop;
 
      if (isVisible) {
        document.querySelector('.about').classList.add('animate');
@@ -21,9 +20,6 @@ document.addEventListener('scroll', function (e) {
        document.querySelector('.about').classList.remove('animate');
      }
   });
-
-
-
 
 
 

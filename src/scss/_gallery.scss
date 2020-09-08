@@ -4,7 +4,7 @@
   position: relative;
   margin-top: 100px;
   display: flex;
-  width:100%;
+  width: 100%;
   height: auto;
 
   .maintext1 {
@@ -22,13 +22,13 @@
   }
 
   .maintext2 {
-    position:absolute;
+    position: absolute;
     width: 37%;
     left: 0;
     margin-left: 2%;
-    margin-top:35%;
+    margin-top: 35%;
     &__paragraph {
-        font-size: 1.4vw;
+      font-size: 1.4vw;
       color: #563210;
       font-family: "Arima Madurai", cursive;
       text-indent: 30px;
@@ -45,6 +45,6 @@
     width: 60%;
     height: auto;
     right: 0;
-    margin-top:20%;
+    margin-top: 20%;
   }
 }
