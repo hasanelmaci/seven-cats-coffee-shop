@@ -1,0 +1,25 @@
+.contact{
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+
+    .contact_content{
+        display:flex;
+        justify-content: space-evenly;
+        font-family: "Arima Madurai", cursive;
+        font-weight: 600;
+        font-size:1.3rem;
+        color: #563210;
+    }
+
+    h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 3.5rem;
+        color: #563210;
+        text-align: center;
+        margin-bottom:50px;
+        margin-top:100px;
+      }
+    
+
+}

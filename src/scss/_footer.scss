@@ -1,0 +1,26 @@
+footer {
+
+    margin-top:50px;
+
+
+  p{
+      font-size:0.9rem;
+      text-align:center;
+      margin-top:10px;
+  }
+
+  .social_media {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .icon {
+      margin-left:10px;
+      margin-right: 10px;
+      cursor:pointer;
+  }
+  .icon:hover{
+      color:brown;
+  }
+}

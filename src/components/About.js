@@ -1,35 +1,26 @@
 import React from "react";
 
+// document.addEventListener('scroll', function (e) {
+//     var top  = window.pageYOffset + window.innerHeight,
+//         isVisible = top > document.querySelector('#about > p').offsetTop;
 
-document.addEventListener('scroll', function (e) {
-    var top  = window.pageYOffset + window.innerHeight,
-        isVisible = top > document.querySelector('#about > p').offsetTop;
+//      if (isVisible) {
+//        document.querySelector('.about').classList.add('animate');
+//      }
+//   });
 
-     if (isVisible) {
-       document.querySelector('.about').classList.add('animate');
-     }
-  });
+//   document.addEventListener('scroll', function (e) {
+//     var top  = window.pageYOffset + window.innerHeight,
+//         isVisible = top > document.querySelector('#about > h3').offsetTop;
 
-
-
-  document.addEventListener('scroll', function (e) {
-    var top  = window.pageYOffset + window.innerHeight,
-        isVisible = top > document.querySelector('#about > h3').offsetTop;
-  
-     if (!isVisible) {
-       document.querySelector('.about').classList.remove('animate');
-     }
-  });
-
-
-
-
-
-
+//      if (!isVisible) {
+//        document.querySelector('.about').classList.remove('animate');
+//      }
+//   });
 
 function About() {
   return (
-    <div className='about' id='about'>
+    <div className="about" id="about">
       <h3>About Us</h3>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus

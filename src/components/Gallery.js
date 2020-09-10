@@ -4,22 +4,19 @@ import shop2 from "../img/shop2.jpg";
 
 // Shop 1 Enter ANIMATION
 document.addEventListener("scroll", function (e) {
-  var top = window.pageYOffset + window.innerHeight,
-    isVisible = top > document.querySelector(".shop1").offsetTop;
+  var top = window.pageYOffset + window.innerHeight;
+  //isVisible = top > document.querySelector(".shop1").offsetTop;
 
   if (top < 1000) {
-    document.querySelector(".shop1").classList.add("exit_animation");
+    document.querySelector(".shop1").classList.add("enter_first");
   } else if (top > 1700 && top < 1900) {
     document.querySelector(".shop1").classList.add("enter_animation");
-    document.querySelector(".shop1").classList.remove("exit_animation");
+    document.querySelector(".shop1").classList.remove("enter_first");
   }
 });
 //Shop 1 EXIT ANIMATION
 document.addEventListener("scroll", function (e) {
-  var top = window.pageYOffset + window.innerHeight,
-    isVisible = top > document.querySelector(".shop1").offsetTop;
-
-  console.log(top);
+  var top = window.pageYOffset + window.innerHeight;
 
   if (top > 2400) {
     document.querySelector(".shop1").classList.remove("enter_animation");
@@ -31,13 +28,12 @@ document.addEventListener("scroll", function (e) {
   }
 });
 
-//SHOP 2 ANIMATIONS
+//SHOP 2 ANIMATIONS-------
 
 //SHOP2 ENTER ANIMATION
 
 document.addEventListener("scroll", function (e) {
-  var top = window.pageYOffset + window.innerHeight,
-    isVisible = top > document.querySelector(".shop2").offsetTop;
+  var top = window.pageYOffset + window.innerHeight;
 
   if (top < 1000) {
     document.querySelector(".shop2").classList.add("exit_animation");
@@ -50,8 +46,7 @@ document.addEventListener("scroll", function (e) {
 //SHOP 2 EXIT ANIMATON
 
 document.addEventListener("scroll", function (e) {
-  var top = window.pageYOffset + window.innerHeight,
-    isVisible = top > document.querySelector(".shop2").offsetTop;
+  var top = window.pageYOffset + window.innerHeight;
 
   if (top > 2400) {
     document.querySelector(".shop2").classList.remove("enter_animation");
@@ -66,15 +61,16 @@ document.addEventListener("scroll", function (e) {
 function Gallery() {
   return (
     <div className="gallery">
-      <img className="shop1" id="shop1" src={shop1} alt="shop1" />
-      <div className="maintext1">
-        <p className="maintext1__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem voluptas nemo veniam facilis praesentium at odit quo
-          reiciendis delectus dolores?
-        </p>
+      <div>
+        <img className="shop1" id="shop1" src={shop1} alt="shop1" />
+        <div className="maintext1">
+          <p className="maintext1__paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem voluptas nemo veniam facilis praesentium at odit quo
+            reiciendis delectus dolores?
+          </p>
+        </div>
       </div>
-
       <img className="shop2" src={shop2} alt="shop2" />
       <div className="maintext2">
         <p className="maintext2__paragraph">

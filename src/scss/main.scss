@@ -3,6 +3,10 @@
 @import "about";
 @import "gallery";
 @import "gallery_animations";
+@import "menu";
+@import "onlinestore";
+@import "contact";
+@import "footer";
 @import "config";
 @import "responsive";
 
@@ -12,4 +16,5 @@ html {
 
 body {
   background-color: #ebe4d6;
+  overflow-x: hidden;
 }
